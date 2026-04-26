@@ -1,0 +1,6 @@
+---
+Name: graphing-config
+---
+# No YAML config needed at this time.
+# Requirements are loaded programmatically via ChartField::Field().
+

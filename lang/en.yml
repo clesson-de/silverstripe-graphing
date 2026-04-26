@@ -1,0 +1,9 @@
+en:
+  Clesson\Silverstripe\Graphing\Forms\ChartField:
+    SINGULARNAME: 'Chart field'
+    PLURALNAME: 'Chart fields'
+    NO_DATA: 'No chart data available'
+  Clesson\Silverstripe\Graphing\Forms\LineChartField:
+    SINGULARNAME: 'Line chart field'
+    PLURALNAME: 'Line chart fields'
+

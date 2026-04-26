@@ -1,0 +1,50 @@
+.chart-field {
+  margin-bottom: 1rem;
+}
+.chart-field__title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.chart-field__series-switcher {
+  display: flex;
+  gap: 0;
+  margin-bottom: 0.75rem;
+}
+.chart-field__series-btn {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #dee2e6;
+  background: #fff;
+  color: #495057;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+.chart-field__series-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.chart-field__series-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.chart-field__series-btn:not(:first-child) {
+  border-left: 0;
+}
+.chart-field__series-btn:hover {
+  background: #f1f3f5;
+}
+.chart-field__series-btn--active {
+  background: #0071c4;
+  color: #fff;
+  border-color: #0071c4;
+}
+.chart-field__series-btn--active:hover {
+  background: #005fa3;
+}
+.chart-field__series-btn--active + .chart-field__series-btn {
+  border-left: 0;
+}
+.chart-field__canvas-wrapper {
+  position: relative;
+  width: 100%;
+}

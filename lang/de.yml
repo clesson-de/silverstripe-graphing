@@ -1,0 +1,9 @@
+de:
+  Clesson\Silverstripe\Graphing\Forms\ChartField:
+    SINGULARNAME: 'Diagramm-Feld'
+    PLURALNAME: 'Diagramm-Felder'
+    NO_DATA: 'Keine Diagrammdaten verfügbar'
+  Clesson\Silverstripe\Graphing\Forms\LineChartField:
+    SINGULARNAME: 'Liniendiagramm-Feld'
+    PLURALNAME: 'Liniendiagramm-Felder'
+

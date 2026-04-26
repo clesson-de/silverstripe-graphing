@@ -1,0 +1,63 @@
+.chart-field {
+    margin-bottom: 1rem;
+
+    &__title {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    &__series-switcher {
+        display: flex;
+        gap: 0;
+        margin-bottom: 0.75rem;
+    }
+
+    &__series-btn {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1px solid #dee2e6;
+        background: #fff;
+        color: #495057;
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s;
+
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+
+        &:last-child {
+            border-radius: 0 4px 4px 0;
+        }
+
+        &:not(:first-child) {
+            border-left: 0;
+        }
+
+        &:hover {
+            background: #f1f3f5;
+        }
+
+        &--active {
+            background: #0071c4;
+            color: #fff;
+            border-color: #0071c4;
+
+            &:hover {
+                background: #005fa3;
+            }
+        }
+
+        // Reset when directly preceded by active button
+        &--active + & {
+            border-left: 0;
+        }
+    }
+
+    &__canvas-wrapper {
+        position: relative;
+        width: 100%;
+    }
+}
+

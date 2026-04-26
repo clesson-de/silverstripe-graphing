@@ -1,0 +1,22 @@
+{
+    "name": "silverstripe-graphing",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build:js": "rollup -c",
+        "build:css": "sass client/admin/src/scss/chart-field.scss client/admin/dist/bundle.css --no-source-map",
+        "build": "npm run build:js && npm run build:css",
+        "watch:js": "rollup -c --watch",
+        "watch:css": "sass --watch client/admin/src/scss/chart-field.scss client/admin/dist/bundle.css --no-source-map",
+        "watch": "npm run watch:js & npm run watch:css"
+    },
+    "dependencies": {
+        "chart.js": "^4"
+    },
+    "devDependencies": {
+        "@rollup/plugin-node-resolve": "^16",
+        "rollup": "^4.0.0",
+        "sass": "^1.0.0"
+    }
+}
+
