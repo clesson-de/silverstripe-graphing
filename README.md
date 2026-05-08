@@ -14,6 +14,7 @@ Chart form fields for Silverstripe CMS 6, rendered with [Chart.js](https://www.c
 - **Extensible** — create custom chart types by extending the abstract `ChartField` base class
 - **Lazy-loaded assets** — Chart.js is only loaded when a chart field is actually rendered
 
+
 ---
 
 ## Requirements
