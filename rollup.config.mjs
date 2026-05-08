@@ -5,6 +5,11 @@
  * CSS is compiled separately via the Sass CLI to guarantee a stable filename.
  */
 import resolve from '@rollup/plugin-node-resolve';
+import license from 'rollup-plugin-license';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default [
     {
@@ -20,6 +25,25 @@ export default [
         external: ['jquery'],
         plugins: [
             resolve(),
+            license({
+                thirdParty: {
+                    // Writes a separate file listing all third-party licenses (MIT requirement)
+                    output: {
+                        file: path.join(__dirname, 'client/admin/dist/bundle.js.LICENSES.txt'),
+                        template(dependencies) {
+                            return dependencies
+                                .map(dep =>
+                                    `${dep.name} v${dep.version} — ${dep.license}\n${dep.licenseText ?? ''}`
+                                )
+                                .join('\n\n---\n\n');
+                        },
+                    },
+                },
+                banner: {
+                    commentStyle: 'regular',
+                    content: `Bundle includes third-party software. See bundle.js.LICENSES.txt for license notices.`,
+                },
+            }),
         ],
     },
 ];

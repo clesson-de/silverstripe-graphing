@@ -1,3 +1,7 @@
+/**
+ * Bundle includes third-party software. See bundle.js.LICENSES.txt for license notices.
+ */
+
 (function () {
   'use strict';
 
