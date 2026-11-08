@@ -19,9 +19,11 @@ Chart form fields for Silverstripe CMS 6, rendered with [Chart.js](https://www.c
 
 ## Requirements
 
+Requires PHP 8.3 or later within PHP 8 and SilverStripe 6.
+
 | Dependency | Version |
 |---|---|
-| PHP | `^8.1` |
+| PHP | `^8.3` |
 | silverstripe/framework | `^6` |
 | silverstripe/admin | `^3` |
 
